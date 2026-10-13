@@ -1,0 +1,197 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #ffffff;
+    color: #202733;
+}
+
+.page-container {
+    width: 776px;
+    max-width: calc(100% - 40px);
+    margin: 27px auto 0;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: -1.6px;
+    line-height: 1.25;
+    margin-bottom: 35px;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 230px 382px;
+    gap: 63px;
+    align-items: center;
+}
+
+.image-container {
+    width: 230px;
+    height: 372px;
+    overflow: hidden;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.problems-card {
+    width: 382px;
+    border: 1px solid #cfd7e2;
+    padding: 5px 15px;
+}
+
+.problem {
+    display: flex;
+    gap: 15px;
+    align-items: flex-start;
+    padding: 19px 0 15px;
+    border-bottom: 1px solid #cfd7e2;
+}
+
+.problem:last-child {
+    border-bottom: none;
+    padding-bottom: 15px;
+}
+
+.problem-icon {
+    flex: 0 0 26px;
+    width: 26px;
+    height: 26px;
+    margin-top: 11px;
+    border-radius: 50%;
+    background: #e8eef8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.problem-icon svg {
+    width: 17px;
+    height: 17px;
+    fill: #344d7a;
+}
+
+.problem-content {
+    flex: 1;
+    min-width: 0;
+}
+
+.problem h2 {
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.5;
+    letter-spacing: -0.3px;
+    margin-bottom: 16px;
+    color: #151b25;
+}
+
+.problem p {
+    font-size: 13px;
+    line-height: 1.65;
+    color: #29364a;
+}
+
+footer {
+    margin: 28px 0 20px;
+    text-align: center;
+    color: #687386;
+    font-size: 12px;
+}
+
+footer span {
+    color: #344d7a;
+    font-weight: bold;
+}
+
+@media (max-width: 800px) {
+    .page-container {
+        width: 600px;
+        margin-top: 25px;
+    }
+
+    h1 {
+        font-size: 30px;
+        margin-bottom: 25px;
+    }
+
+    .content {
+        grid-template-columns: minmax(150px, 0.8fr) minmax(0, 1.2fr);
+        gap: 25px;
+    }
+
+    .image-container {
+        width: 100%;
+        height: 350px;
+    }
+
+    .problems-card {
+        width: 100%;
+        padding: 5px 12px;
+    }
+
+    .problem {
+        gap: 10px;
+    }
+
+    .problem h2 {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    .problem p {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 520px) {
+    .page-container {
+        max-width: calc(100% - 32px);
+        margin-top: 24px;
+    }
+
+    h1 {
+        font-size: 28px;
+        letter-spacing: -1px;
+        margin-bottom: 22px;
+    }
+
+    .content {
+        grid-template-columns: 1fr;
+        gap: 22px;
+    }
+
+    .image-container {
+        width: 100%;
+        height: 320px;
+    }
+
+    .problems-card {
+        width: 100%;
+        padding: 5px 14px;
+    }
+
+    .problem {
+        padding: 17px 0;
+    }
+
+    .problem h2 {
+        font-size: 15px;
+    }
+
+    .problem p {
+        font-size: 13px;
+    }
+}
+```
+
+Image: Save the photo from your reference as `businessman.jpg` in the same folder as `index.html` and `style.css`.
